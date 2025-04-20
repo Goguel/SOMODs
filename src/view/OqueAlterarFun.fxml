@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OqueAlterarFunController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0c2cd;">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="353.0" layoutX="247.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="123.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../seta.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnVoltar" layoutX="12.0" layoutY="36.0" mnemonicParsing="false" onAction="#onVoltarClick" opacity="0.0" prefHeight="31.0" prefWidth="110.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnNome" layoutX="347.0" layoutY="29.0" mnemonicParsing="false" onAction="#onAltNomeClick" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Nome" textFill="#e0c2cd">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnCPF" layoutX="347.0" layoutY="79.0" mnemonicParsing="false" onAction="#onAltCPFClick" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="CPF" textFill="#e0c2cd">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnTelefone" layoutX="347.0" layoutY="129.0" mnemonicParsing="false" onAction="#onAltTelefoneClick" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Telefone" textFill="#e0c2cd">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnEndereco" layoutX="347.0" layoutY="179.0" mnemonicParsing="false" onAction="#onAltEnderecoClick" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Endereço" textFill="#e0c2cd">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnEmail" layoutX="347.0" layoutY="229.0" mnemonicParsing="false" onAction="#onAltEmailClick" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Email" textFill="#e0c2cd">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="55.0" layoutY="89.0" prefHeight="78.0" prefWidth="200.0" text="O que deseja alterar:" textFill="#650953">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
