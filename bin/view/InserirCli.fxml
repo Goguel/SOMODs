@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="600.0" style="-fx-background-color: #e0c2cd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InserirCliController">
+   <bottom>
+      <AnchorPane prefHeight="320.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="7.0" prefHeight="38.0" prefWidth="167.0" style="-fx-background-color: #e0c2cd;" text="Insira o nome do cliente:" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="txtNomeCli" layoutX="235.0" layoutY="14.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+            <Label layoutX="40.0" layoutY="48.0" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #e0c2cd;" text="Insira o CPF do cliente:" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="txtCPFCli" layoutX="235.0" layoutY="55.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+            <Label layoutX="40.0" layoutY="90.0" prefHeight="37.0" prefWidth="370.0" style="-fx-background-color: #e0c2cd;" text="Insira o telefone do cliente:" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="txtTelCli" layoutX="235.0" layoutY="96.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+            <Label layoutX="40.0" layoutY="131.0" prefHeight="37.0" prefWidth="370.0" style="-fx-background-color: #e0c2cd;" text="Insira o endereço do cliente:" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="txtEndCli" layoutX="235.0" layoutY="137.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+            <Label layoutX="40.0" layoutY="172.0" prefHeight="37.0" prefWidth="370.0" style="-fx-background-color: #e0c2cd;" text="Insira o email do cliente:" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField fx:id="txtEmaCli" layoutX="235.0" layoutY="178.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+            <Button fx:id="btnAplicar" layoutX="265.0" layoutY="238.0" mnemonicParsing="false" onAction="#onAplicarClick" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Aplicar mudanças" textFill="#e0c2cd">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="68.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="353.0" layoutX="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="107.0" layoutX="14.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../seta.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnVoltar" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#onVoltarClick" opacity="0.0" prefHeight="29.0" prefWidth="107.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

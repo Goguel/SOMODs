@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InserirProdController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="600.0" style="-fx-background-color: #e0c2cd;">
+         <bottom>
+            <AnchorPane prefHeight="320.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="77.0" layoutY="24.0" prefHeight="38.0" prefWidth="186.0" style="-fx-background-color: #e0c2cd;" text="Insira o nome do produto:" textFill="#650953">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtNomeProd" layoutX="299.0" layoutY="31.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+                  <Label layoutX="77.0" layoutY="78.0" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #e0c2cd;" text="Insira o valor do produto:" textFill="#650953">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtValorProd" layoutX="299.0" layoutY="85.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+                  <Label layoutX="77.0" layoutY="137.0" prefHeight="38.0" prefWidth="222.0" style="-fx-background-color: #e0c2cd;" text="Insira a quantidade do produto:" textFill="#650953">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtqtdrestanteProd" layoutX="299.0" layoutY="143.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;" />
+                  <Button fx:id="btnAplicar" layoutX="230.0" layoutY="221.0" mnemonicParsing="false" onAction="#onAplicarClick" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Aplicar mudanças" textFill="#e0c2cd">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="68.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="353.0" layoutX="247.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="107.0" layoutX="14.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../seta.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnVoltar" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#onVoltarClick" opacity="0.0" prefHeight="29.0" prefWidth="107.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
