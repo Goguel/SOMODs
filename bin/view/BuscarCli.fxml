@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0c2cd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BuscarCliController">
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="353.0" layoutX="247.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="123.0" layoutX="12.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../seta.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Button fx:id="btnVoltar" layoutX="13.0" layoutY="40.0" mnemonicParsing="false" onAction="#onVoltarClick" opacity="0.0" prefHeight="29.0" prefWidth="106.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e0c2cd;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblInsereCPF" layoutX="31.0" layoutY="101.0" text="Insira o CPF do cliente a ser buscado:" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBuscaCli" layoutX="300.0" layoutY="96.0" prefWidth="200.0" promptText="Digite aqui..." style="-fx-background-radius: 15;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="btnBuscar" layoutX="242.0" layoutY="215.0" mnemonicParsing="false" onAction="#onBuscarClick" style="-fx-background-color: #650953; -fx-background-radius: 15;" text="Buscar cliente" textFill="#e0c2cd">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="lblNomeCli" layoutX="43.0" prefHeight="31.0" prefWidth="114.0" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCPFCli" layoutX="43.0" layoutY="60.0" prefHeight="31.0" prefWidth="114.0" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTelefoneCli" layoutX="43.0" layoutY="120.0" prefHeight="31.0" prefWidth="134.0" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEnderecoCli" layoutX="43.0" layoutY="180.0" prefHeight="31.0" prefWidth="138.0" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmailCli" layoutX="43.0" layoutY="240.0" prefHeight="31.0" prefWidth="114.0" textFill="#650953">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNomeCli1" layoutX="220.0" prefHeight="31.0" prefWidth="300.0" textFill="#650953" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblCPFCli1" layoutX="220.0" layoutY="60.0" prefHeight="31.0" prefWidth="200.0" textFill="#650953" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblTelefoneCli1" layoutX="220.0" layoutY="120.0" prefHeight="31.0" prefWidth="200.0" textFill="#650953" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblEnderecoCli1" layoutX="220.0" layoutY="180.0" prefHeight="31.0" prefWidth="300.0" textFill="#650953" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Label fx:id="lblEmailCli1" layoutX="220.0" layoutY="240.0" prefHeight="31.0" prefWidth="300.0" textFill="#650953" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
